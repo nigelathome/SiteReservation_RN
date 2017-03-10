@@ -41,11 +41,17 @@ export default class siteReservation_RN extends Component {
 
         <Text>{movie.title}</Text>
         <Text>{movie.year}</Text>
-        <Image source= {{uri: movie.posters.thumbnail}}
-               style={{width: 150, height: 70}}></Image>
+        <Image
+          source={{uri: movie.posters.thumbnail}}
+          style={styles.thumbnail}
+        />
+        // <Image
+        //   source={{uri: movie.posters.thumbnail}}
+        //   style={styles.thumbnail}
+        // />
       </View>
     );
   }
-}
+
 
 AppRegistry.registerComponent('siteReservation_RN', () => siteReservation_RN);
